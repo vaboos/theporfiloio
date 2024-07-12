@@ -4700,9 +4700,12 @@ input, select, textarea {
   display: block;
   max-width: 100%; /* Ensure it doesn’t exceed the parent’s width */
 }
+<<<<<<< HEAD
 .articles-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
 }
+=======
+>>>>>>> c7c248321b6e8e29bf479c303153fe6eed98bf78
