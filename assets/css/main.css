@@ -3227,20 +3227,20 @@ input, select, textarea {
 		overflow: hidden;
 	}
 
-#wrapper > .bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #212931; /* Fallback color in case the image doesn't load */
-    background-image: url("images/grunge.jpg"); /* Replace with your tiled image path */
-    background-size: auto; /* Adjust if you need to scale the tile */
-    background-position: top left; /* Aligns the tile at the top left */
-    background-repeat: repeat; /* Ensures the image repeats to cover the area */
-    background-attachment: scroll;
-    z-index: -1;
-}
+		#wrapper > .bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #212931;
+			background-image: url("images/grunge.jpg"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/grunge.jpg");
+			background-size: auto,								auto,														100% auto;
+			background-position: center,								center,														top center;
+			background-repeat: repeat,								no-repeat,													no-repeat;
+			background-attachment: scroll,								scroll,														scroll;
+			z-index: -1;
+		}
 
 			#wrapper > .bg.fixed {
 				position: fixed;
